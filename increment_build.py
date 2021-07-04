@@ -2,7 +2,7 @@
 import re
 
 # Regex patter to be used to ID the correct line in pubspec.yaml
-version_line_pattern = "(version:\s+\d+\.\d+\.\d+\+)(\d+)"
+version_line_pattern = "version:\s+\d+\.\d+\.\d+\+\d+"
 
 # Open pubspec.yaml and read lines into memory
 with open("pubspec.yaml", "r") as current_pubspec:
